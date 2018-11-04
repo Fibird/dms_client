@@ -1,4 +1,4 @@
-#include "header/log_reader.h"
+#include "log_reader.h"
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
@@ -7,10 +7,10 @@
 #include <time.h>
 #include <arpa/inet.h>
 
-#include "header/client_exception.h"
-#include "header/read_exception.h"
-#include "header/save_exception.h"
-#include "header/backup_exception.h"
+#include "client_exception.h"
+#include "read_exception.h"
+#include "save_exception.h"
+#include "backup_exception.h"
 
 //#define _DEBUG
 
@@ -269,6 +269,7 @@ void LogReader::match()
                         strcmp(login_rec.log_ip, logout_rec.log_ip) == 0)
                 {
                     strcpy(matched_log_rec.log_name, logout_rec.log_name);
+                    strcat(matched_log_rec.log_name, " ");
                     matched_log_rec.pid = logout_rec.pid;
                     matched_log_rec.login_time = login_rec.log_time;
                     matched_log_rec.logout_time = logout_rec.log_time;

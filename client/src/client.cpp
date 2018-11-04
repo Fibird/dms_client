@@ -1,6 +1,6 @@
-#include "header/client.h"
-#include "header/data.h"
-#include "header/console_sender.h"
+#include "client.h"
+#include "data.h"
+#include "console_sender.h"
 
 Client::Client(LogReader & log_reader, LogSender & log_sender):log_reader(log_reader),log_sender(log_sender)
 {

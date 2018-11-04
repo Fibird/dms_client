@@ -1,7 +1,7 @@
 #ifndef LOG_SENDER_H
 #define LOG_SENDER_H
 
-#include "header/data.h"
+#include "data.h"
 #include <list>
 
 using std::list;

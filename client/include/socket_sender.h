@@ -1,7 +1,7 @@
 #ifndef SOCKET_SENDER_H
 #define SOCKET_SENDER_H
 
-#include "header/log_sender.h"
+#include "log_sender.h"
 #include <string>
 
 using std::string;

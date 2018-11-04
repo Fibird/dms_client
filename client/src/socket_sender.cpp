@@ -1,5 +1,5 @@
-#include "header/socket_sender.h"
-#include "header/data.h"
+#include "socket_sender.h"
+#include "data.h"
 
 #include <sys/types.h>
 #include <sys/socket.h>
@@ -10,10 +10,10 @@
 #include <iostream>
 #include <fstream>
 
-#include "header/read_exception.h"
-#include "header/save_exception.h"
-#include "header/socket_exception.h"
-#include "header/send_exception.h"
+#include "read_exception.h"
+#include "save_exception.h"
+#include "socket_exception.h"
+#include "send_exception.h"
 
 //#define _DEBUG
 //#define _TEST

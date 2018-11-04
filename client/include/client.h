@@ -1,7 +1,7 @@
 #ifndef CLIENT_H
 #define CLIENT_H
-#include "header/log_reader.h"
-#include "header/log_sender.h"
+#include "log_reader.h"
+#include "log_sender.h"
 
 class Client
 {

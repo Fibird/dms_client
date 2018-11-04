@@ -1,5 +1,5 @@
-#include "header/client.h"
-#include "header/socket_sender.h"
+#include "client.h"
+#include "socket_sender.h"
 
 using namespace std;
 

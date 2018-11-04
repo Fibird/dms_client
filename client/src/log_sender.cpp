@@ -1,4 +1,4 @@
-#include "header/log_sender.h"
+#include "log_sender.h"
 
 LogSender::LogSender()
 {
