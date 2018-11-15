@@ -63,6 +63,6 @@ compile_commands.json
 CTestTestfile.cmake
 
 ### binary dir ###
-client/bin
-client/build
+bin
+build
 # End of https://www.gitignore.io/api/cmake

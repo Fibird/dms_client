@@ -96,6 +96,8 @@ void SocketSender::connectServer()
         int connet_fd=connect(socket_fd,(struct sockaddr *)&server_sockaddr,sizeof(struct sockaddr));
         if (connet_fd<0)
         {
+            cout << connet_fd << endl;
+            perror("error");
             throw SocketException("Connect to server failed");
         }
         else
@@ -194,10 +196,13 @@ void SocketSender::readUnsendedFile(list<MatchedLogRec> & matched_log)
 void SocketSender::sendData(list<MatchedLogRec> & matched_log)
 {
     int num_send_log=0;
+    // flag for data sender
+    int flag = 1;
     try
     {
         cout<<"Starting to send data to server..."<<endl;
         int send_num;
+        send_num=send(socket_fd,(void *)&flag,sizeof(int),0);
         for (list<MatchedLogRec>::iterator it=matched_log.begin();it!=matched_log.end();)
         {
 #ifdef _DEBUG
